@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_register.xml",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_login.xml",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_splash.xml",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_welcome.xml",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_welcome.xml"
+    }
+]

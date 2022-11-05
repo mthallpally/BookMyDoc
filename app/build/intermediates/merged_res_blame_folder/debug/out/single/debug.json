@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/font_nunito.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/font/nunito.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_tooth.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_tooth.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_tick.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_tick.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_brain.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_brain.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-hdpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-hdpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_clock.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xxxhdpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xxxhdpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_rounded_blue.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/rounded_blue.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_rating.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_rating.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xxhdpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xxhdpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/layout_activity_login.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xxhdpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xxhdpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_docotor_list.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_docotor_list.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-hdpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-hdpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/layout_activity_splash.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xhdpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xhdpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_experience.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_experience.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-ldpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-ldpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_bg_edittextbox.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/bg_edittextbox.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_menu.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_obline_badge.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_obline_badge.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_login_illu.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_login_illu.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-mdpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-mdpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_patient.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_patient.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/layout_activity_welcome.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-mdpi_ic_star.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-mdpi/ic_star.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/layout_activity_register.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-anydpi-v24_ic_star.xml.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-anydpi-v24/ic_star.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/xml_backup_rules.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xhdpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xhdpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_welcome_illue.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_welcome_illue.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/font_nunito_semibold.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/font/nunito_semibold.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-anydpi-v24_ic_slider_bg.xml.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-anydpi-v24/ic_slider_bg.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_search.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_back.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable_ic_eye.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/drawable/ic_eye.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/font_nunito_bold.xml.flat",
+        "source": "com.bookmydoc.app-main-34:/font/nunito_bold.xml"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-ldpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-ldpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/drawable-xxxhdpi_ic_slider_bg.png.flat",
+        "source": "com.bookmydoc.app-pngs-27:/drawable-xxxhdpi/ic_slider_bg.png"
+    },
+    {
+        "merged": "com.bookmydoc.app-merged_res-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.bookmydoc.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    }
+]
