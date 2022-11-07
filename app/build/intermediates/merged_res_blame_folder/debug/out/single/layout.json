@@ -1,18 +1,22 @@
 [
     {
-        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_register.xml",
-        "source": "com.bookmydoc.app-main-34:/layout/activity_register.xml"
+        "merged": "com.bookmydoc.app-mergeDebugResources-32:/layout/activity_welcome.xml",
+        "source": "com.bookmydoc.app-main-35:/layout/activity_welcome.xml"
     },
     {
-        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_login.xml",
-        "source": "com.bookmydoc.app-main-34:/layout/activity_login.xml"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-mergeDebugResources-32:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-main-35:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_splash.xml",
-        "source": "com.bookmydoc.app-main-34:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-mergeDebugResources-32:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-main-35:\\layout\\activity_welcome.xml"
     },
     {
-        "merged": "com.bookmydoc.app-mergeDebugResources-31:/layout/activity_welcome.xml",
-        "source": "com.bookmydoc.app-main-34:/layout/activity_welcome.xml"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-mergeDebugResources-32:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-main-35:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-mergeDebugResources-32:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.3.3\\com.bookmydoc.app-main-35:\\layout\\activity_register.xml"
     }
 ]

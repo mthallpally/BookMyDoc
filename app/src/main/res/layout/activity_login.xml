@@ -6,6 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         tools:context=".view.LoginActivity">
 
         <LinearLayout
@@ -17,9 +18,11 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivProfile"
+                android:transitionName="profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_80sdp"
                 android:src="@drawable/ic_login_illu" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -51,6 +54,8 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 app:boxBackgroundMode="none"
                 app:errorEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#6E7DB1"
                 app:errorTextAppearance="@style/error_appearance"
                 app:hintEnabled="false">
 
@@ -71,6 +76,8 @@
                 android:layout_marginTop="@dimen/_30sdp"
                 android:background="@drawable/rounded_blue"
                 android:text="@string/login"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_bold"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -82,7 +89,7 @@
                 android:gravity="center"
                 android:text="@string/forgot_password"
                 android:textColor="#ACACAC"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
 
         </LinearLayout>
@@ -94,10 +101,10 @@
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:fontFamily="@font/nunito_semibold"
+            android:fontFamily="@font/nunito"
             android:gravity="center"
             android:text="@string/dont_have_an_account_register"
             android:textColor="#ACACAC"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
 </layout>

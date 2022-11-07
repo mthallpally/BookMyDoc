@@ -13,23 +13,47 @@ public class ActivityRegisterBindingImpl extends ActivityRegisterBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.ivProfile, 1);
+        sViewsWithIds.put(R.id.ipFullName, 2);
+        sViewsWithIds.put(R.id.mEdtFullName, 3);
+        sViewsWithIds.put(R.id.ipEmail, 4);
+        sViewsWithIds.put(R.id.mEdtEmail, 5);
+        sViewsWithIds.put(R.id.ccp1, 6);
+        sViewsWithIds.put(R.id.ipMobile, 7);
+        sViewsWithIds.put(R.id.mEdtMobile, 8);
+        sViewsWithIds.put(R.id.ipPassword, 9);
+        sViewsWithIds.put(R.id.mEdtPassword, 10);
+        sViewsWithIds.put(R.id.btnSignup, 11);
+        sViewsWithIds.put(R.id.txtLogin, 12);
     }
     // views
     @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
+    private final androidx.core.widget.NestedScrollView mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityRegisterBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
     }
     private ActivityRegisterBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.appcompat.widget.AppCompatButton) bindings[11]
+            , (com.hbb20.CountryCodePicker) bindings[6]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[4]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[2]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[7]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[9]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[1]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[5]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[3]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[8]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
+        this.mboundView0 = (androidx.core.widget.NestedScrollView) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

@@ -6,15 +6,73 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.bookmydoc.R;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+import com.hbb20.CountryCodePicker;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityRegisterBinding extends ViewDataBinding {
-  protected ActivityRegisterBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final AppCompatButton btnSignup;
+
+  @NonNull
+  public final CountryCodePicker ccp1;
+
+  @NonNull
+  public final TextInputLayout ipEmail;
+
+  @NonNull
+  public final TextInputLayout ipFullName;
+
+  @NonNull
+  public final TextInputLayout ipMobile;
+
+  @NonNull
+  public final TextInputLayout ipPassword;
+
+  @NonNull
+  public final AppCompatImageView ivProfile;
+
+  @NonNull
+  public final TextInputEditText mEdtEmail;
+
+  @NonNull
+  public final TextInputEditText mEdtFullName;
+
+  @NonNull
+  public final TextInputEditText mEdtMobile;
+
+  @NonNull
+  public final TextInputEditText mEdtPassword;
+
+  @NonNull
+  public final AppCompatTextView txtLogin;
+
+  protected ActivityRegisterBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      AppCompatButton btnSignup, CountryCodePicker ccp1, TextInputLayout ipEmail,
+      TextInputLayout ipFullName, TextInputLayout ipMobile, TextInputLayout ipPassword,
+      AppCompatImageView ivProfile, TextInputEditText mEdtEmail, TextInputEditText mEdtFullName,
+      TextInputEditText mEdtMobile, TextInputEditText mEdtPassword, AppCompatTextView txtLogin) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.btnSignup = btnSignup;
+    this.ccp1 = ccp1;
+    this.ipEmail = ipEmail;
+    this.ipFullName = ipFullName;
+    this.ipMobile = ipMobile;
+    this.ipPassword = ipPassword;
+    this.ivProfile = ivProfile;
+    this.mEdtEmail = mEdtEmail;
+    this.mEdtFullName = mEdtFullName;
+    this.mEdtMobile = mEdtMobile;
+    this.mEdtPassword = mEdtPassword;
+    this.txtLogin = txtLogin;
   }
 
   @NonNull

@@ -1,35 +1,36 @@
-com.bookmydoc.app-recyclerview-1.1.0-0 C:\Users\abc\.gradle\caches\transforms-3\020244b9cdabe2fcb0027b815fc9caa8\transformed\recyclerview-1.1.0\res
-com.bookmydoc.app-constraintlayout-2.1.4-1 C:\Users\abc\.gradle\caches\transforms-3\04ad0b4a023e5fc6ca2669406151a6ea\transformed\constraintlayout-2.1.4\res
-com.bookmydoc.app-annotation-experimental-1.1.0-2 C:\Users\abc\.gradle\caches\transforms-3\0d668bbb7f553fd780cc3ea32432440a\transformed\annotation-experimental-1.1.0\res
-com.bookmydoc.app-transition-1.2.0-3 C:\Users\abc\.gradle\caches\transforms-3\14b3c7ff9bc3b46d8068b9514278113d\transformed\transition-1.2.0\res
-com.bookmydoc.app-databinding-runtime-7.2.2-4 C:\Users\abc\.gradle\caches\transforms-3\2725d6c06465b45efb1c68a93ed07aa5\transformed\databinding-runtime-7.2.2\res
-com.bookmydoc.app-coordinatorlayout-1.1.0-5 C:\Users\abc\.gradle\caches\transforms-3\42a1242bd9b281b95b98166e5c9d62ed\transformed\coordinatorlayout-1.1.0\res
-com.bookmydoc.app-lifecycle-process-2.4.1-6 C:\Users\abc\.gradle\caches\transforms-3\4506895b5aacda24b8c4dc29b0b43d4c\transformed\lifecycle-process-2.4.1\res
-com.bookmydoc.app-appcompat-resources-1.5.1-7 C:\Users\abc\.gradle\caches\transforms-3\5a4c89e7f1da04ed1b7331a641f7b982\transformed\appcompat-resources-1.5.1\res
-com.bookmydoc.app-material-1.7.0-8 C:\Users\abc\.gradle\caches\transforms-3\5ad505201ff43dc76d0fa38a46133e64\transformed\material-1.7.0\res
-com.bookmydoc.app-core-1.8.0-9 C:\Users\abc\.gradle\caches\transforms-3\5b4f0ebc2de8ae8b764bc452a6c78125\transformed\core-1.8.0\res
-com.bookmydoc.app-appcompat-1.5.1-10 C:\Users\abc\.gradle\caches\transforms-3\667532d60b8d6522138adca55137767a\transformed\appcompat-1.5.1\res
-com.bookmydoc.app-startup-runtime-1.1.1-11 C:\Users\abc\.gradle\caches\transforms-3\7ade39af25565ef6df4b6ba22127c0ef\transformed\startup-runtime-1.1.1\res
-com.bookmydoc.app-viewpager2-1.0.0-12 C:\Users\abc\.gradle\caches\transforms-3\804df020b7620b490565a3aab0c66b91\transformed\viewpager2-1.0.0\res
-com.bookmydoc.app-activity-1.5.1-13 C:\Users\abc\.gradle\caches\transforms-3\85023d46dc4b36fe156dd36000798721\transformed\activity-1.5.1\res
-com.bookmydoc.app-lifecycle-viewmodel-savedstate-2.5.1-14 C:\Users\abc\.gradle\caches\transforms-3\8a7b7dbb6be6df69d4c05b0a78fa6b9a\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-com.bookmydoc.app-lifecycle-viewmodel-2.5.1-15 C:\Users\abc\.gradle\caches\transforms-3\9a6c2fb04b1bb608e55aee047b956b88\transformed\lifecycle-viewmodel-2.5.1\res
-com.bookmydoc.app-lifecycle-runtime-2.5.1-16 C:\Users\abc\.gradle\caches\transforms-3\a57c7716a5e1df474c1e5376e0d99ac0\transformed\lifecycle-runtime-2.5.1\res
-com.bookmydoc.app-lifecycle-livedata-core-2.5.1-17 C:\Users\abc\.gradle\caches\transforms-3\a5b32b6cefafb965e4d52212c15423ea\transformed\lifecycle-livedata-core-2.5.1\res
-com.bookmydoc.app-sdp-android-1.1.0-18 C:\Users\abc\.gradle\caches\transforms-3\aab15fc937a66242b9ced06f5a1953ee\transformed\sdp-android-1.1.0\res
-com.bookmydoc.app-fragment-1.3.6-19 C:\Users\abc\.gradle\caches\transforms-3\b3aa350f4ac90edfb40e0da537b8925b\transformed\fragment-1.3.6\res
-com.bookmydoc.app-drawerlayout-1.1.1-20 C:\Users\abc\.gradle\caches\transforms-3\c1e67adaf8e753ede21de05035a7ba1f\transformed\drawerlayout-1.1.1\res
-com.bookmydoc.app-emoji2-views-helper-1.2.0-21 C:\Users\abc\.gradle\caches\transforms-3\c970fb12e2e2530d3a3148c7bac90262\transformed\emoji2-views-helper-1.2.0\res
-com.bookmydoc.app-databinding-adapters-7.2.2-22 C:\Users\abc\.gradle\caches\transforms-3\cbffd40ea9e54974bb0a036e69517f55\transformed\databinding-adapters-7.2.2\res
-com.bookmydoc.app-savedstate-1.2.0-23 C:\Users\abc\.gradle\caches\transforms-3\cd88e0a3f19338246f9574fc59079e35\transformed\savedstate-1.2.0\res
-com.bookmydoc.app-emoji2-1.2.0-24 C:\Users\abc\.gradle\caches\transforms-3\da48a8d9492694346a86fc86ba4a4f76\transformed\emoji2-1.2.0\res
-com.bookmydoc.app-core-ktx-1.8.0-25 C:\Users\abc\.gradle\caches\transforms-3\e6e65a8e4acf4a11e180fe862dd71dc5\transformed\core-ktx-1.8.0\res
-com.bookmydoc.app-cardview-1.0.0-26 C:\Users\abc\.gradle\caches\transforms-3\ffa621b045168f3978544764e72b6c93\transformed\cardview-1.0.0\res
-com.bookmydoc.app-pngs-27 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\generated\res\pngs\debug
-com.bookmydoc.app-resValues-28 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\generated\res\resValues\debug
-com.bookmydoc.app-rs-29 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\generated\res\rs\debug
-com.bookmydoc.app-packageDebugResources-30 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.bookmydoc.app-packageDebugResources-31 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.bookmydoc.app-merged_res-32 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\build\intermediates\merged_res\debug
-com.bookmydoc.app-debug-33 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\src\debug\res
-com.bookmydoc.app-main-34 C:\Users\abc\AndroidStudioProjects\BookMyDoc\app\src\main\res
+com.bookmydoc.app-drawerlayout-1.1.1-0 C:\Users\Lenovo\.gradle\caches\transforms-3\09b479b283643669a15537c6631d6019\transformed\drawerlayout-1.1.1\res
+com.bookmydoc.app-savedstate-1.2.0-1 C:\Users\Lenovo\.gradle\caches\transforms-3\123136d6408a7fe4ba18aba1359d2fd5\transformed\savedstate-1.2.0\res
+com.bookmydoc.app-appcompat-1.5.1-2 C:\Users\Lenovo\.gradle\caches\transforms-3\267e0760a7e08d46f60c87fb0474f7b7\transformed\appcompat-1.5.1\res
+com.bookmydoc.app-lifecycle-viewmodel-2.5.1-3 C:\Users\Lenovo\.gradle\caches\transforms-3\2a41050c28ace594682366903a86d0b1\transformed\lifecycle-viewmodel-2.5.1\res
+com.bookmydoc.app-emoji2-1.2.0-4 C:\Users\Lenovo\.gradle\caches\transforms-3\2d3f05d812bb370cd0209b8fea6edffc\transformed\emoji2-1.2.0\res
+com.bookmydoc.app-startup-runtime-1.1.1-5 C:\Users\Lenovo\.gradle\caches\transforms-3\34a2d4b34c8f8742b42ab376d1787edc\transformed\startup-runtime-1.1.1\res
+com.bookmydoc.app-material-1.7.0-6 C:\Users\Lenovo\.gradle\caches\transforms-3\5599273776874f38765497ba7473f583\transformed\material-1.7.0\res
+com.bookmydoc.app-coordinatorlayout-1.1.0-7 C:\Users\Lenovo\.gradle\caches\transforms-3\61c616618602b301b47e498a47591384\transformed\coordinatorlayout-1.1.0\res
+com.bookmydoc.app-databinding-adapters-7.2.2-8 C:\Users\Lenovo\.gradle\caches\transforms-3\699f48d6e58241dab349376318e8a578\transformed\databinding-adapters-7.2.2\res
+com.bookmydoc.app-lifecycle-process-2.4.1-9 C:\Users\Lenovo\.gradle\caches\transforms-3\6ae412046871f0af1b2733e073b3099b\transformed\lifecycle-process-2.4.1\res
+com.bookmydoc.app-core-1.8.0-10 C:\Users\Lenovo\.gradle\caches\transforms-3\8f444a6019daa214ac28c04a25b87612\transformed\core-1.8.0\res
+com.bookmydoc.app-fragment-1.3.6-11 C:\Users\Lenovo\.gradle\caches\transforms-3\90359d0ebd49f97b05218e3ca32c4b2a\transformed\fragment-1.3.6\res
+com.bookmydoc.app-transition-1.2.0-12 C:\Users\Lenovo\.gradle\caches\transforms-3\919242ba5ca5c2be420e82003b2159c8\transformed\transition-1.2.0\res
+com.bookmydoc.app-viewpager2-1.0.0-13 C:\Users\Lenovo\.gradle\caches\transforms-3\93e62bdd30bf21189af6e03012c08112\transformed\viewpager2-1.0.0\res
+com.bookmydoc.app-core-ktx-1.8.0-14 C:\Users\Lenovo\.gradle\caches\transforms-3\94269d30456cf71e69c8ab997d709436\transformed\core-ktx-1.8.0\res
+com.bookmydoc.app-sdp-android-1.1.0-15 C:\Users\Lenovo\.gradle\caches\transforms-3\9576cf7fa9b84db939fe22da47c2d196\transformed\sdp-android-1.1.0\res
+com.bookmydoc.app-appcompat-resources-1.5.1-16 C:\Users\Lenovo\.gradle\caches\transforms-3\99ce86fb3bb859eeb2323068a91d53ec\transformed\appcompat-resources-1.5.1\res
+com.bookmydoc.app-activity-1.5.1-17 C:\Users\Lenovo\.gradle\caches\transforms-3\af3acc92c4985e7ebb4e7ebb4324dcd3\transformed\activity-1.5.1\res
+com.bookmydoc.app-ccp-2.5.1-18 C:\Users\Lenovo\.gradle\caches\transforms-3\b5fd310202630d40201c254e7b9dbf98\transformed\ccp-2.5.1\res
+com.bookmydoc.app-constraintlayout-2.1.4-19 C:\Users\Lenovo\.gradle\caches\transforms-3\b8cb7f7c7abebe85b2ca77e152964fb3\transformed\constraintlayout-2.1.4\res
+com.bookmydoc.app-recyclerview-1.1.0-20 C:\Users\Lenovo\.gradle\caches\transforms-3\bf84bdbdc2ab99a810518dca859ad2a5\transformed\recyclerview-1.1.0\res
+com.bookmydoc.app-cardview-1.0.0-21 C:\Users\Lenovo\.gradle\caches\transforms-3\c7e545b9e0c7747712b08cb8e2b8fc80\transformed\cardview-1.0.0\res
+com.bookmydoc.app-lifecycle-viewmodel-savedstate-2.5.1-22 C:\Users\Lenovo\.gradle\caches\transforms-3\cb6556b0313ba39cb7988ddc47362cf2\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.bookmydoc.app-databinding-runtime-7.2.2-23 C:\Users\Lenovo\.gradle\caches\transforms-3\cd139fc96e222b3478e35a0c5868a9f4\transformed\databinding-runtime-7.2.2\res
+com.bookmydoc.app-lifecycle-runtime-2.5.1-24 C:\Users\Lenovo\.gradle\caches\transforms-3\ce5dbdb69e099493bfaef76fe09249a6\transformed\lifecycle-runtime-2.5.1\res
+com.bookmydoc.app-annotation-experimental-1.1.0-25 C:\Users\Lenovo\.gradle\caches\transforms-3\dd86ec81d2da17f298296f8d59e3d99f\transformed\annotation-experimental-1.1.0\res
+com.bookmydoc.app-emoji2-views-helper-1.2.0-26 C:\Users\Lenovo\.gradle\caches\transforms-3\f77f283fa275c096b9919fd7813b899a\transformed\emoji2-views-helper-1.2.0\res
+com.bookmydoc.app-lifecycle-livedata-core-2.5.1-27 C:\Users\Lenovo\.gradle\caches\transforms-3\feb98ddb7b6336b569a8af40a365bdc8\transformed\lifecycle-livedata-core-2.5.1\res
+com.bookmydoc.app-pngs-28 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\generated\res\pngs\debug
+com.bookmydoc.app-resValues-29 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\generated\res\resValues\debug
+com.bookmydoc.app-rs-30 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\generated\res\rs\debug
+com.bookmydoc.app-packageDebugResources-31 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.bookmydoc.app-packageDebugResources-32 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.bookmydoc.app-merged_res-33 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\build\intermediates\merged_res\debug
+com.bookmydoc.app-debug-34 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\src\debug\res
+com.bookmydoc.app-main-35 F:\Android Projects\Project\TycheeInnovations-Projects\DoctorAppoitment\BookMyDoc\app\src\main\res

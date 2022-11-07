@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -27,6 +28,9 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   public final TextInputLayout ipPassword;
 
   @NonNull
+  public final AppCompatImageView ivProfile;
+
+  @NonNull
   public final TextInputEditText mEdtEmail;
 
   @NonNull
@@ -40,12 +44,13 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
 
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppCompatButton btnLogin, TextInputLayout ipEmail, TextInputLayout ipPassword,
-      TextInputEditText mEdtEmail, TextInputEditText mEdtPassword, AppCompatTextView txtForgot,
-      AppCompatTextView txtSignup) {
+      AppCompatImageView ivProfile, TextInputEditText mEdtEmail, TextInputEditText mEdtPassword,
+      AppCompatTextView txtForgot, AppCompatTextView txtSignup) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnLogin = btnLogin;
     this.ipEmail = ipEmail;
     this.ipPassword = ipPassword;
+    this.ivProfile = ivProfile;
     this.mEdtEmail = mEdtEmail;
     this.mEdtPassword = mEdtPassword;
     this.txtForgot = txtForgot;

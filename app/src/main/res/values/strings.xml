@@ -5,11 +5,23 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="please_enter_email">Please Enter Email</string>
-    <string name="please_enter_password">Please Enter Password</string>
-    <string name="dont_have_an_account_register">Don’t have an account? <font fgcolor='#468CFD'>Sign Up</font></string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="dont_have_an_account_register">Don’t have an account? <strong><font fgcolor='#468CFD'>Sign Up</font></strong></string>
     <string name="next">Next</string>
     <string name="welcome">Welcome!</string>
-    <string name="welcome_str">Manage Your appointments and create new ones.</string>
+    <string name="welcome_str">Manage Your appointments and\ncreate new ones.</string>
+
+
+    <string name="name">Name</string>
+    <string name="please_enter_name">Please Enter your name</string>
+    <string name="mobile">Mobile</string>
+    <string name="please_enter_mobile">Please Enter your mobile number</string>
+    <string name="signup">Sign Up</string>
+    <string name="have_an_account_login">have an account? <strong><font fgcolor='#468CFD'>Login</font></strong></string>
+
+    <string name="join_us_to_start_searching">Join us to start searching</string>
+    <string name="find_your_medical_solution">find your medical solution!</string>
+
 
 </resources>

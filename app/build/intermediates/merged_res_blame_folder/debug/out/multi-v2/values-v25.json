@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.bookmydoc.app-mergeDebugResources-30:/values-v25/values-v25.xml",
+            "outputFile": "com.bookmydoc.app-mergeDebugResources-31:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\abc\\.gradle\\caches\\transforms-3\\667532d60b8d6522138adca55137767a\\transformed\\appcompat-1.5.1\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\267e0760a7e08d46f60c87fb0474f7b7\\transformed\\appcompat-1.5.1\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
