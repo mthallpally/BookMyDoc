@@ -14,8 +14,13 @@
         android:theme="@style/Theme.BookMyDoc"
         tools:targetApi="31">
         <activity
-            android:name=".view.DashboardActivity"
+            android:name=".view.DocotrDetailActivity"
+            android:theme="@style/Theme.Blue"
             android:exported="false" />
+        <activity
+            android:name=".view.DashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.White" />
         <activity
             android:name=".view.WelcomeActivity"
             android:exported="false"
@@ -39,7 +44,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

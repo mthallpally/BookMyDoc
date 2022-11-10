@@ -46,9 +46,6 @@ dependencies {
 
     // dimensions
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
-    
     //Country Code Picker
     implementation 'com.hbb20:ccp:2.5.1'
-
-
 }

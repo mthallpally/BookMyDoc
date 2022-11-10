@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+        <attr name="pinWidth" format="dimension"/>
+        <attr name="pinHeight" format="dimension"/>
+        <attr name="splitWidth" format="dimension"/>
+        <attr name="cursorVisible" format="boolean"/>
+        <attr name="password" format="boolean"/>
+        <attr name="forceKeyboard" format ="boolean"/>
+        <attr name="hint" format="string"/>
+        <attr name="inputType"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+
+    <declare-styleable name="MaterialSearchBar">
+        //Base
+        <attr name="mt_speechMode" format="boolean" />
+        <attr name="mt_maxSuggestionsCount" format="integer" />
+        <attr name="mt_navIconEnabled" format="boolean" />
+        <attr name="mt_roundedSearchBarEnabled" format="boolean" />
+        //(API 21+ , Will Revert To Default Shape On Lower
+        <attr name="mt_menuDividerEnabled" format="boolean" />
+        <attr name="mt_dividerColor" format="color" />
+        <attr name="mt_searchBarColor" format="color" />
+
+        //Icons
+        <attr name="mt_menuIconDrawable" format="reference" />
+        <attr name="mt_searchIconDrawable" format="reference" />
+        <attr name="mt_speechIconDrawable" format="reference" />
+        <attr name="mt_backIconDrawable" format="reference" />
+        <attr name="mt_clearIconDrawable" format="reference" />
+        <attr name="mt_navIconTint" format="color" />
+        <attr name="mt_menuIconTint" format="color" />
+        <attr name="mt_searchIconTint" format="color" />
+        <attr name="mt_backIconTint" format="color" />
+        <attr name="mt_clearIconTint" format="color" />
+        <attr name="mt_navIconUseTint" format="boolean" />
+        <attr name="mt_menuIconUseTint" format="boolean" />
+        <attr name="mt_searchIconUseTint" format="boolean" />
+        <attr name="mt_backIconUseTint" format="boolean" />
+        <attr name="mt_clearIconUseTint" format="boolean" />
+        <attr name="mt_borderlessRippleEnabled" format="boolean" />
+
+        //Text
+        <attr name="mt_hint" format="string" />
+        <attr name="mt_placeholder" format="string" />
+        <attr name="mt_textColor" format="color" />
+        <attr name="mt_hintColor" format="color" />
+        <attr name="mt_placeholderColor" format="color" />
+        <attr name="mt_textCursorTint" format="color" />
+        <attr name="mt_leftTextSelectorDrawable" format="reference" />
+        <attr name="mt_middleTextSelectorDrawable" format="reference" />
+        <attr name="mt_rightTextSelectorDrawable" format="reference" />
+        <attr name="mt_leftTextSelectorTint" format="color" />
+        <attr name="mt_middleTextSelectorTint" format="color" />
+        <attr name="mt_rightTextSelectorTint" format="color" />
+        <attr name="mt_handlesTintEnabled" format="boolean" />
+        <attr name="mt_highlightedTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpansionHeader">
+        <attr name="expansion_layout" format="reference"/>
+        <attr name="expansion_toggleOnClick" format="boolean"/>
+        <attr name="expansion_headerIndicator" format="reference"/>
+        <attr name="expansion_headerIndicatorRotationExpanded" format="integer"/>
+        <attr name="expansion_headerIndicatorRotationCollapsed" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpansionLayout">
+        <attr name="expansion_expanded" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="expansion_openOnlyOne" format="boolean"/>
+
+    <declare-styleable name="ExpansionsViewGroupFrameLayout">
+        <attr name="expansion_openOnlyOne"/>
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupLinearLayout">
+        <attr name="expansion_openOnlyOne"/>
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupRelativeLayout">
+        <attr name="expansion_openOnlyOne"/>
+    </declare-styleable>
+    <declare-styleable name="ExpansionsViewGroupConstraintLayout">
+        <attr name="expansion_openOnlyOne"/>
+    </declare-styleable>
+    <declare-styleable name="CodeScannerView">
+        <attr format="color" name="maskColor"/>
+        <attr format="color" name="frameColor"/>
+        <attr format="color" name="autoFocusButtonColor"/>
+        <attr format="color" name="flashButtonColor"/>
+        <attr format="boolean" name="autoFocusButtonVisible"/>
+        <attr format="boolean" name="flashButtonVisible"/>
+        <attr format="dimension" name="frameThickness"/>
+        <attr format="dimension" name="frameCornersSize"/>
+        <attr format="dimension" name="frameCornersRadius"/>
+        <attr format="float" name="frameAspectRatioWidth"/>
+        <attr format="float" name="frameAspectRatioHeight"/>
+        <attr format="float" name="frameSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalCalendarView">
+        <!-- Default text color for all texts -->
+        <attr name="textColorNormal" format="color" />
+        <!-- Default top text color -->
+        <attr name="colorTopText" format="color" />
+        <!-- Default Middle text color -->
+        <attr name="colorMiddleText" format="color" />
+        <!-- Default Bottom text color -->
+        <attr name="colorBottomText" format="color" />
+
+        <!-- Selected item's text color for all texts -->
+        <attr name="textColorSelected" format="color" />
+        <!-- Selected item's top text color -->
+        <attr name="colorTopTextSelected" format="color" />
+        <!-- Selected item's Middle text color -->
+        <attr name="colorMiddleTextSelected" format="color" />
+        <!-- Selected item's Bottom text color -->
+        <attr name="colorBottomTextSelected" format="color" />
+        <!-- Selected item's background drawable -->
+        <attr name="selectedDateBackground" format="reference" />
+
+        <!-- Background color for selector bar. -->
+        <attr name="selectorColor" format="color" />
+
+        <!-- Top text size -->
+        <attr name="sizeTopText" format="dimension" />
+        <!-- Middle text size -->
+        <attr name="sizeMiddleText" format="dimension" />
+        <!-- Bottom text size -->
+        <attr name="sizeBottomText" format="dimension" />
+        <attr format="color" name="colorAccent"/>
+    </declare-styleable>
+</resources>

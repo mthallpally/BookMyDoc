@@ -19,7 +19,7 @@ class WelcomeActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view) {
             binding.btnNext -> {
-                val intent = Intent(this, WelcomeActivity::class.java)
+                val intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
             }
         }

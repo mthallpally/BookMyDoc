@@ -23,5 +23,33 @@
     <string name="join_us_to_start_searching">Join us to start searching</string>
     <string name="find_your_medical_solution">find your medical solution!</string>
 
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="john_doe">John Doe</string>
+    <string name="search_doctor_medicine">Search doctor, medicine…</string>
+    <string name="category">Category</string>
+    <string name="view_more">View more</string>
+
+    <string name="brain">Brain</string>
+    <string name="dental">Dental</string>
+    <string name="eye">Eye</string>
+    <string name="doctors_20">20 Doctors</string>
+    <string name="doctors_15">15 Doctors</string>
+    <string name="doctors_10">10 Doctors</string>
+
+
+
+    <string name="patient">Patient</string>
+    <string name="experience">Experience</string>
+    <string name="rating">Rating</string>
+    <string name="years_2">2 Years</string>
+    <string name="_10k">10K</string>
+
+    <string name="top_doctors">Top Doctors</string>
+    <string name="doctors_location">Doctors Location</string>
+    <string name="choose_day">Choose Day</string>
+
+
+
+
 
 </resources>
