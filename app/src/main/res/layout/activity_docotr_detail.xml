@@ -20,6 +20,7 @@
             android:paddingEnd="@dimen/_10sdp">
 
             <ImageButton
+                android:id="@+id/imgBack"
                 android:layout_width="@dimen/_42sdp"
                 android:layout_height="@dimen/_42sdp"
                 android:background="?selectableItemBackgroundBorderless"
@@ -36,8 +37,10 @@
 
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDrName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_20sdp"
                     android:fontFamily="@font/nunito_bold"
                     android:text="Dr. Anastasia\nAlana"
                     android:textColor="#FFF"
@@ -286,7 +289,47 @@
                     tools:itemCount="3"
                     tools:listitem="@layout/view_booking_time" />
 
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_15sdp">
 
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_blue_border"
+                        android:gravity="center">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawableStart="@drawable/ic_outline_call"
+                            android:fontFamily="@font/nunito"
+                            android:text="Call"
+                            android:gravity="center"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="#478CFC"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:background="@drawable/rounded_blue"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Make an Appoitment"
+                        android:textColor="@color/white"
+                        app:autoSizeTextType="uniform"
+                        app:autoSizeMinTextSize="8sp"
+                        app:autoSizeMaxTextSize="16sp"
+                        app:autoSizeStepGranularity="2sp"
+                        android:textSize="16sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.core.widget.NestedScrollView>

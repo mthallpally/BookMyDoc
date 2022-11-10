@@ -37,7 +37,6 @@
     <string name="doctors_10">10 Doctors</string>
 
 
-
     <string name="patient">Patient</string>
     <string name="experience">Experience</string>
     <string name="rating">Rating</string>
@@ -47,9 +46,6 @@
     <string name="top_doctors">Top Doctors</string>
     <string name="doctors_location">Doctors Location</string>
     <string name="choose_day">Choose Day</string>
-
-
-
 
 
 </resources>

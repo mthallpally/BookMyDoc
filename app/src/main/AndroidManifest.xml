@@ -14,9 +14,21 @@
         android:theme="@style/Theme.BookMyDoc"
         tools:targetApi="31">
         <activity
-            android:name=".view.DocotrDetailActivity"
+            android:name=".view.DoctorListActivity"
             android:theme="@style/Theme.Blue"
             android:exported="false" />
+        <activity
+            android:name=".view.CategoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".view.SuccessActivity"
+            android:theme="@style/Theme.White"
+            android:exported="false" />
+        <activity
+            android:name=".view.DocotrDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.DashboardActivity"
             android:exported="false"

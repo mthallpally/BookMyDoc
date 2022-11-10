@@ -1,7 +1,9 @@
 package com.bookmydoc.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bookmydoc.R
@@ -14,7 +16,7 @@ import com.bookmydoc.horizontalcalendar.utils.HorizontalCalendarListener
 import com.bookmydoc.interfaces.ListSelector
 import java.util.*
 
-class DocotrDetailActivity : BaseActivity() {
+class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDocotrDetailBinding
     var day: Int = 0
     var month: Int = 0
@@ -22,11 +24,16 @@ class DocotrDetailActivity : BaseActivity() {
     var currendate: String = ""
     private var mSlotAdapter: SlotAdapter? = null
     var fromTime: String = ""
+    var drName: String = ""
 
     private var timeSlotMorrningList = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_docotr_detail)
+        binding.btnBook.setOnClickListener(this)
+        binding.imgBack.setOnClickListener(this)
+        drName = intent.getStringExtra("drName").toString()
+        binding.txtDrName.text = drName
         datePicker()
 
         mSlotAdapter = SlotAdapter(object : ListSelector {
@@ -47,6 +54,19 @@ class DocotrDetailActivity : BaseActivity() {
         timeSlotMorrningList.add("03:00 PM")
         timeSlotMorrningList.add("04:00 PM")
         mSlotAdapter!!.setUpcomingList(this, timeSlotMorrningList)
+    }
+
+    override fun onClick(view: View?) {
+        when (view) {
+            binding.btnBook -> {
+                val intent = Intent(this, SuccessActivity::class.java)
+                intent.putExtra("drName", drName)
+                startActivity(intent)
+            }
+            binding.imgBack -> {
+                onBackPressed()
+            }
+        }
     }
 
     fun datePicker() {
