@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -48,4 +49,7 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     //Country Code Picker
     implementation 'com.hbb20:ccp:2.5.1'
+
+    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 }
