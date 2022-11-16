@@ -21,6 +21,7 @@ class WelcomeActivity : BaseActivity(), View.OnClickListener {
             binding.btnNext -> {
                 val intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
+                finishAffinity()
             }
         }
     }

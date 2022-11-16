@@ -47,5 +47,10 @@
     <string name="doctors_location">Doctors Location</string>
     <string name="choose_day">Choose Day</string>
 
+    <string name="please_wait">Please wait…</string>
+
+    <string name="please_press_back_again_to_exit">Please back again to Exit</string>
+
+    <string name="i_agree_to_the_terms_and_condition">I Agree To The <u> Terms &amp; Condition </u></string>
 
 </resources>

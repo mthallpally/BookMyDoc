@@ -2,10 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.core.widget.NestedScrollView
-    android:layout_width="match_parent"
-    android:background="@color/white"
-    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
 
         <LinearLayout
@@ -13,17 +14,19 @@
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@color/white"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:background="@color/white"
             tools:context=".view.RegisterActivity">
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivProfile"
-                android:transitionName="profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/ic_login_illu" />
+                android:src="@drawable/ic_login_illu"
+                android:transitionName="profile" />
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -146,6 +149,41 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ipConfirmPassword"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:boxBackgroundMode="none"
+                app:errorEnabled="false"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#6E7DB1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mEdtConfirmPassword"
+                    style="@style/EditTextTheme"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:tag="@string/please_enter_password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_terms_and_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:buttonTint="@color/theam"
+                android:text="@string/i_agree_to_the_terms_and_condition"
+                android:textColor="#6E7DB1"
+                app:buttonTint="@color/theam"
+                tools:checked="false"
+                tools:ignore="UnusedAttribute" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSignup"
                 android:layout_width="match_parent"
@@ -173,6 +211,5 @@
         </LinearLayout>
 
 
-
-</androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </layout>

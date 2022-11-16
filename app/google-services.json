@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1091107187580",
+    "project_id": "bookmydoc-5c640",
+    "storage_bucket": "bookmydoc-5c640.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091107187580:android:d8afc6ad5b06ba8fd692f9",
+        "android_client_info": {
+          "package_name": "com.bookmydoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091107187580-mnl6c1e4h73guf3uk57ovkptm0uecac7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmydoc",
+            "certificate_hash": "23b89b408b059ae4580b33f833a02e15c80672e1"
+          }
+        },
+        {
+          "client_id": "1091107187580-s81smv6e694843977ld387197gfk2lc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI4Lfa3EbPUnT2E8vk_ooO2zZgU2xlXJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091107187580-s81smv6e694843977ld387197gfk2lc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bookmydoc">
+    package="com.bookmydoc" >
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,19 +15,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookMyDoc"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".view.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SettingsActivity"
+            android:exported="false" />
         <activity
             android:name=".view.DoctorListActivity"
-            android:theme="@style/Theme.Blue"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.CategoryActivity"
             android:exported="false"
             android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.SuccessActivity"
-            android:theme="@style/Theme.White"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.White" />
         <activity
             android:name=".view.DocotrDetailActivity"
             android:exported="false"
@@ -47,7 +56,7 @@
         <activity
             android:name=".view.LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.White">
+            android:theme="@style/Theme.White" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
