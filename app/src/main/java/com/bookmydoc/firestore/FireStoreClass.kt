@@ -67,7 +67,7 @@ class FireStoreClass {
                     editor.apply()
 
                     when (activity) {
-                       // is LoginActivity -> activity.userLoggedInSuccess(user)
+                        is LoginActivity -> activity.userLoggedInSuccess(user)
                         is RegisterActivity -> activity.userLoggedInSuccess(user)
                        // is SettingsActivity -> activity.userDetailSuccess(user)
                     }
@@ -90,11 +90,11 @@ class FireStoreClass {
             .update(userHashMap)
             .addOnSuccessListener {
                 when (activity) {
-                   // is UserProfileActivity -> activity.userProfileUpdateSuccess()
+                    is UserProfileActivity -> activity.userProfileUpdateSuccess()
                 }
             }.addOnFailureListener { e ->
                 when (activity) {
-                    //is UserProfileActivity -> activity.hideProgressDialog()
+                    is UserProfileActivity -> activity.hideProgressDialog()
                 }
                 Log.e(activity.javaClass.simpleName, "Error while updating profile", e)
             }
@@ -115,12 +115,12 @@ class FireStoreClass {
                         Log.e("Image Url", uri.toString())
 
                         when (activity) {
-                          //  is UserProfileActivity -> activity.imageUploadSuccess(uri.toString())
+                            is UserProfileActivity -> activity.imageUploadSuccess(uri.toString())
                         }
                     }
             }.addOnFailureListener { e ->
                 when (activity) {
-                  //  is UserProfileActivity -> activity.hideProgressDialog()
+                    is UserProfileActivity -> activity.hideProgressDialog()
                 }
                 Log.e("Error while uploading", "Error while uploading image to db", e)
             }

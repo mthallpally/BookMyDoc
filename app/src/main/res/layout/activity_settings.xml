@@ -2,10 +2,80 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.SettingsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard_bg"
+        android:orientation="vertical"
+        tools:context=".view.SettingsActivity">
+
+        <RelativeLayout
+            android:id="@+id/linPopular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_below="@+id/rlSearch"
+            android:background="@drawable/doctor__detail_bg"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/_10sdp">
+
+            <ImageButton
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                 android:gravity="center"
+                android:orientation="vertical"
+
+                android:paddingTop="@dimen/_15sdp">
+                <RelativeLayout
+                    android:id="@+id/imgProfile"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/profile_bg"
+                        android:contentDescription="@string/app_name" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerInParent="true"
+                        app:civ_border_color="@color/white"
+                        android:src="@drawable/ic_user_placeholder" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDrName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:text="Karan Pitroda"
+                    android:textColor="#FFF"
+                    android:textSize="24sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/nunito"
+                    android:text="karanpitroda1012@gmail.com"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

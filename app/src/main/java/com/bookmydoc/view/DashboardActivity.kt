@@ -28,6 +28,8 @@ class DashboardActivity : BaseActivity(), View.OnClickListener {
         binding.cardBrain.setOnClickListener(this)
         binding.cardDental.setOnClickListener(this)
         binding.cardTopDoctor.setOnClickListener(this)
+        binding.imgProfile.setOnClickListener(this)
+
 
 
 
@@ -66,6 +68,11 @@ class DashboardActivity : BaseActivity(), View.OnClickListener {
             }
             binding.cardEye -> {
                 val intent = Intent(this, DoctorListActivity::class.java)
+                intent.putExtra("category", "Eye")
+                startActivity(intent)
+            }
+            binding.imgProfile -> {
+                val intent = Intent(this, SettingsActivity::class.java)
                 intent.putExtra("category", "Eye")
                 startActivity(intent)
             }

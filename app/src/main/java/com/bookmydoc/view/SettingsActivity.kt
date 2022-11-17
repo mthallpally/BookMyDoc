@@ -7,7 +7,7 @@ import com.bookmydoc.R
 import com.bookmydoc.databinding.ActivityCategoryBinding
 import com.bookmydoc.databinding.ActivitySettingsBinding
 
-class SettingsActivity : AppCompatActivity() {
+class   SettingsActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

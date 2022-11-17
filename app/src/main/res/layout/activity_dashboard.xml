@@ -13,22 +13,39 @@
         <RelativeLayout
             android:id="@+id/rlToolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_15sdp">
 
-            <ImageButton
-                android:id="@+id/imgMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_42sdp"
-                android:layout_centerVertical="true"
-                android:background="?selectableItemBackgroundBorderless"
-                android:contentDescription="@string/app_name"
-                android:paddingStart="@dimen/_15sdp"
-                android:paddingEnd="@dimen/_15sdp"
-                android:src="@drawable/ic_menu" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
+                    android:text="@string/welcome_back"
+                    android:textColor="#BABABA"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/john_doe"
+                    android:textColor="#707070"
+                    android:textSize="24sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
 
             <RelativeLayout
+                android:id="@+id/imgProfile"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_alignParentEnd="true">
@@ -58,31 +75,6 @@
                 android:layout_height="wrap_content">
 
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:id="@+id/linUserName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:orientation="vertical">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nunito"
-                        android:text="@string/welcome_back"
-                        android:textColor="#BABABA"
-                        android:textSize="18sp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nunito_bold"
-                        android:text="@string/john_doe"
-                        android:textColor="#707070"
-                        android:textSize="24sp" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <ImageView
                     android:layout_width="match_parent"
