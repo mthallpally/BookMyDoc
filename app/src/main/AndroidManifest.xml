@@ -24,6 +24,7 @@
             android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.SettingsActivity"
+            android:theme="@style/Theme.Blue"
             android:exported="false" />
         <activity
             android:name=".view.DoctorListActivity"
@@ -55,16 +56,19 @@
             android:theme="@style/Theme.White" />
         <activity
             android:name=".view.SplashActivity"
-            android:exported="false" />
+            android:theme="@style/Theme.White"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".view.LoginActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.White">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

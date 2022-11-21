@@ -11,10 +11,12 @@ import com.bookmydoc.base.BaseActivity
 import com.bookmydoc.databinding.ViewBookingTimeBinding
 import com.bookmydoc.databinding.ViewCategoryBinding
 import com.bookmydoc.interfaces.ListSelector
+import com.bookmydoc.model.Categories
+import com.bumptech.glide.Glide
 
 class CategoryAdapter(val mCallBack: ListSelector, val mcount: Int) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
-    public var itemList: ArrayList<String>? = null
+    public var itemList: ArrayList<Categories>? = null
     private var activity: BaseActivity? = null
     private var count: Int? = mcount
 
@@ -29,21 +31,23 @@ class CategoryAdapter(val mCallBack: ListSelector, val mcount: Int) :
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onBindViewHolder(holder: ViewHolder, i: Int) {
 
-        holder.mBinding.txtName.text = itemList!!.get(i)
+        holder.mBinding.txtName.text = itemList!!.get(i).name
         holder.itemView.setOnClickListener {
             mCallBack.selectedList(i)
         }
-
+        Glide.with(activity!!)
+            .load(itemList!!.get(i).image)
+            .into(holder.mBinding.image)
     }
 
     override fun getItemCount(): Int {
-        return if (itemList == null) 0 else itemList!!.size
+        return count!!
 
     }
 
     fun setUpcomingList(
         activity: BaseActivity,
-        itemList: ArrayList<String>?
+        itemList: ArrayList<Categories>?
     ) {
         this.itemList = itemList
         this.activity = activity

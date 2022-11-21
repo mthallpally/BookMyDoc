@@ -10,7 +10,7 @@ object  Constants {
 
     /*Collections*/
     const val USERS: String = "users"
-    const val PRODUCTS : String = "products"
+    const val CATEGORIES : String = "categories"
     const val CART_ITEMS : String = "card_items"
     const val ORDERS : String = "orders"
     const val SOLD_PRODUCT :String = "sold_products"
@@ -24,7 +24,7 @@ object  Constants {
     const val MALE: String = "male"
     const val FEMALE: String = "female"
 
-    const val FIRST_NAME : String = "firstName"
+    const val FULL_NAME : String = "fullName"
     const val LAST_NAME : String = "lastName"
 
     const val GENDER: String = "gender"

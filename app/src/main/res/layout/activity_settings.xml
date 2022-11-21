@@ -19,27 +19,21 @@
             android:orientation="horizontal"
             android:paddingEnd="@dimen/_10sdp">
 
-            <ImageButton
-                android:id="@+id/imgBack"
-                android:layout_width="@dimen/_42sdp"
-                android:layout_height="@dimen/_42sdp"
-                android:background="?selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_back" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/_15sdp"
-                 android:gravity="center"
+                android:gravity="center"
                 android:orientation="vertical"
 
                 android:paddingTop="@dimen/_15sdp">
+
                 <RelativeLayout
-                    android:id="@+id/imgProfile"
                     android:layout_width="@dimen/_80sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true">
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
 
                     <ImageView
                         android:layout_width="@dimen/_80sdp"
@@ -48,15 +42,16 @@
                         android:contentDescription="@string/app_name" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProfile"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"
                         android:layout_centerInParent="true"
-                        app:civ_border_color="@color/white"
-                        android:src="@drawable/ic_user_placeholder" />
+                        android:src="@drawable/ic_user_placeholder"
+                        app:civ_border_color="@color/white" />
                 </RelativeLayout>
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/txtDrName"
+                    android:id="@+id/txtUserName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito_bold"
@@ -66,6 +61,7 @@
                     android:textSize="24sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -75,7 +71,145 @@
                     android:textSize="18sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+            <ImageButton
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back" />
+
 
         </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@color/white"
+            android:outlineAmbientShadowColor="#000"
+            android:outlineSpotShadowColor="#14000000"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:cardElevation="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_42sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/ic_edit_user" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center_vertical"
+                        android:text="Profile Settings"
+                        android:textColor="#6E7DB1"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_42sdp"
+                        android:padding="@dimen/_15sdp"
+                        android:src="@drawable/ic_next_arrow" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linAppointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_42sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/ic_appointment" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center_vertical"
+                        android:text="My Appointments"
+                        android:textColor="#6E7DB1"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_42sdp"
+                        android:padding="@dimen/_15sdp"
+                        android:src="@drawable/ic_next_arrow" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@color/white"
+            app:cardBackgroundColor="@color/white"
+            android:outlineAmbientShadowColor="#000"
+            android:outlineSpotShadowColor="#14000000"
+            app:cardCornerRadius="@dimen/_16sdp"
+
+            app:cardElevation="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="#07F21E52"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_log_out_outline" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textColor="#F21E52"
+                    android:textSize="20sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.card.MaterialCardView>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

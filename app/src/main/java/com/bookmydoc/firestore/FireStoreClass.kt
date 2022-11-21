@@ -13,10 +13,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.bookmydoc.model.*
 import com.bookmydoc.Constants
-import com.bookmydoc.view.LoginActivity
-import com.bookmydoc.view.RegisterActivity
-import com.bookmydoc.view.SettingsActivity
-import com.bookmydoc.view.UserProfileActivity
+import com.bookmydoc.view.*
 import com.google.firebase.auth.FirebaseAuth
 
 class FireStoreClass {
@@ -69,7 +66,8 @@ class FireStoreClass {
                     when (activity) {
                         is LoginActivity -> activity.userLoggedInSuccess(user)
                         is RegisterActivity -> activity.userLoggedInSuccess(user)
-                       // is SettingsActivity -> activity.userDetailSuccess(user)
+                        is SettingsActivity -> activity.userDetailSuccess(user)
+                        is DashboardActivity -> activity.userDetailSuccess(user)
                     }
                 }
 
@@ -77,7 +75,7 @@ class FireStoreClass {
                 when (activity) {
                     is LoginActivity -> activity.hideProgressDialog()
                     is RegisterActivity -> activity.hideProgressDialog()
-                  //  is SettingsActivity -> activity.hideProgressDialog()
+                    is SettingsActivity -> activity.hideProgressDialog()
                 }
                 Log.e(activity.javaClass.simpleName, exception.message.toString())
             }
@@ -125,6 +123,32 @@ class FireStoreClass {
                 Log.e("Error while uploading", "Error while uploading image to db", e)
             }
     }
+    fun getCategoriesList(activity: Activity) {
+        mFireStore.collection(Constants.CATEGORIES)
+            .get()
+            .addOnSuccessListener { document ->
+                Log.i(activity.javaClass.simpleName, document.documents.toString())
 
+                val productList: ArrayList<Categories> = ArrayList()
+
+                for (i in document.documents) {
+                    val product = i.toObject(Categories::class.java)!!
+                    //product.categories_id = i.id
+
+                    productList.add(product)
+                }
+                when (activity) {
+                    is CategoryActivity -> activity.successCategoryListFromFirestore(productList)
+                    is DashboardActivity -> activity.successCategoryListFromFirestore(productList)
+
+                }
+            }
+            .addOnFailureListener { e ->
+                when (activity) {
+                    is CategoryActivity -> activity.hideProgressDialog()
+                }
+                Log.e("Error :: ", e.message.toString())
+            }
+    }
 
 }

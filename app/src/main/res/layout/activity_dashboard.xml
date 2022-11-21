@@ -34,10 +34,11 @@
                     android:textSize="18sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUserName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito_bold"
-                    android:text="@string/john_doe"
+                    tools:text="@string/john_doe"
                     android:textColor="#707070"
                     android:textSize="24sp" />
 
@@ -45,7 +46,7 @@
 
 
             <RelativeLayout
-                android:id="@+id/imgProfile"
+                android:id="@+id/rlProfile"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_alignParentEnd="true">
@@ -57,7 +58,8 @@
                     android:background="@drawable/profile_bg"
                     android:contentDescription="@string/app_name" />
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
                     android:layout_width="@dimen/_42sdp"
                     android:layout_height="@dimen/_42sdp"
                     android:layout_centerInParent="true"
@@ -73,7 +75,6 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
 
 
                 <ImageView
@@ -116,8 +117,8 @@
                     android:layout_below="@+id/rlSearch"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
-                    android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/doctor_bg"
+                    android:foreground="?attr/selectableItemBackground"
                     android:orientation="horizontal"
                     android:paddingEnd="@dimen/_10sdp">
 
@@ -182,14 +183,14 @@
                             android:textSize="24sp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                         android:id="@+id/txtViewmore"
+                            android:id="@+id/txtViewmore"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:fontFamily="@font/nunito"
+                            android:foreground="?attr/selectableItemBackground"
                             android:gravity="center"
                             android:text="@string/view_more"
-                            android:foreground="?attr/selectableItemBackground"
                             android:textColor="#6E7DB1"
                             android:textSize="16sp" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -200,7 +201,8 @@
                         android:clipToPadding="false"
                         android:orientation="horizontal"
                         android:paddingTop="@dimen/_15sdp"
-                        android:paddingEnd="@dimen/_15sdp">
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:visibility="gone">
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cardDental"
@@ -210,15 +212,13 @@
                             android:layout_marginBottom="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:background="@drawable/category_bg"
+                            android:foreground="?attr/selectableItemBackground"
                             android:outlineAmbientShadowColor="#000"
                             android:outlineSpotShadowColor="#14000000"
                             app:cardCornerRadius="@dimen/_10sdp"
-
-                            android:foreground="?attr/selectableItemBackground"
                             app:cardElevation="@dimen/_10sdp">
 
                             <androidx.appcompat.widget.LinearLayoutCompat
-
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@color/white"
@@ -229,7 +229,7 @@
                                 <ImageView
                                     android:layout_width="@dimen/_24sdp"
                                     android:layout_height="@dimen/_24sdp"
-                                    android:src="@drawable/ic_tooth" />
+                                    android:src="@drawable/audiologist" />
 
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_width="match_parent"
@@ -261,11 +261,11 @@
                             android:layout_marginBottom="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:background="@drawable/category_bg"
+                            android:foreground="?attr/selectableItemBackground"
                             android:outlineAmbientShadowColor="#000"
                             android:outlineSpotShadowColor="#14000000"
-                            app:cardCornerRadius="@dimen/_10sdp"
 
-                            android:foreground="?attr/selectableItemBackground"
+                            app:cardCornerRadius="@dimen/_10sdp"
                             app:cardElevation="@dimen/_10sdp">
 
                             <androidx.appcompat.widget.LinearLayoutCompat
@@ -310,11 +310,11 @@
                             android:layout_marginBottom="@dimen/_10sdp"
                             android:layout_weight="1"
                             android:background="@drawable/category_bg"
+                            android:foreground="?attr/selectableItemBackground"
                             android:outlineAmbientShadowColor="#000"
                             android:outlineSpotShadowColor="#14000000"
-                            app:cardCornerRadius="@dimen/_10sdp"
 
-                            android:foreground="?attr/selectableItemBackground"
+                            app:cardCornerRadius="@dimen/_10sdp"
                             app:cardElevation="@dimen/_10sdp">
 
                             <androidx.appcompat.widget.LinearLayoutCompat
@@ -352,6 +352,20 @@
                         </com.google.android.material.card.MaterialCardView>
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMorningSlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:clipToPadding="false"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="3"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/view_category" />
+
                 </LinearLayout>
 
 
@@ -379,15 +393,15 @@
                             android:textSize="24sp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
-                           android:id="@+id/txtDrViewMore"
+                            android:id="@+id/txtDrViewMore"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:fontFamily="@font/nunito"
-                            android:gravity="center"
-                            android:text="@string/view_more"
-
                             android:foreground="?attr/selectableItemBackground"
+                            android:gravity="center"
+
+                            android:text="@string/view_more"
                             android:textColor="#6E7DB1"
                             android:textSize="16sp" />
 
@@ -395,17 +409,17 @@
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <com.google.android.material.card.MaterialCardView
-                 android:id="@+id/cardTopDoctor"
+                        android:id="@+id/cardTopDoctor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/_15sdp"
                         android:layout_weight="1"
                         android:background="@drawable/category_bg"
+                        android:foreground="?attr/selectableItemBackground"
                         android:outlineAmbientShadowColor="#000"
                         android:outlineSpotShadowColor="#14000000"
-                        app:cardCornerRadius="@dimen/_16sdp"
 
-                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="@dimen/_16sdp"
                         app:cardElevation="@dimen/_10sdp">
 
 

@@ -170,7 +170,7 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
         val userHashMap: HashMap<String, Any> = HashMap()
 
         if (mUserDetails.fullName != binding.mEdtFullName.text.toString().trim{ it<=' '}){
-            userHashMap[Constants.FIRST_NAME] = binding.mEdtFullName.text.toString().trim{ it<= ' '}
+            userHashMap[Constants.FULL_NAME] = binding.mEdtFullName.text.toString().trim{ it<= ' '}
         }
 
 
