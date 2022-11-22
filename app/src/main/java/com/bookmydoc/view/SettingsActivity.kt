@@ -44,6 +44,11 @@ class SettingsActivity : BaseActivity(), View.OnClickListener {
                 intent.putExtra(Constants.EXTRA_USER_DETAILS,mUserDetails)
                 startActivity(intent)
             }
+            R.id.linAppointment -> {
+                val intent = Intent(this@SettingsActivity,MyBookingActivity::class.java)
+                intent.putExtra(Constants.EXTRA_USER_DETAILS,mUserDetails)
+                startActivity(intent)
+            }
             R.id.linLogout -> {
                 alertDialogLogout()
             }

@@ -65,6 +65,7 @@
                     android:drawablePadding="@dimen/_10sdp"
                     android:hint="@string/password"
                     android:inputType="textPassword"
+                    android:imeOptions="actionDone"
                     android:tag="@string/please_enter_password" />
 
             </com.google.android.material.textfield.TextInputLayout>

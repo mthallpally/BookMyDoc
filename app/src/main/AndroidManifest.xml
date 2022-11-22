@@ -4,7 +4,7 @@
     package="com.bookmydoc">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -19,13 +19,17 @@
         android:theme="@style/Theme.BookMyDoc"
         tools:targetApi="31">
         <activity
+            android:name=".view.MyBookingActivity"
+            android:theme="@style/Theme.Blue"
+            android:exported="false" />
+        <activity
             android:name=".view.UserProfileActivity"
             android:exported="false"
             android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.SettingsActivity"
-            android:theme="@style/Theme.Blue"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.DoctorListActivity"
             android:exported="false"
@@ -56,20 +60,18 @@
             android:theme="@style/Theme.White" />
         <activity
             android:name=".view.SplashActivity"
-            android:theme="@style/Theme.White"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:theme="@style/Theme.White">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".view.LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.White">
-
-        </activity>
+            android:theme="@style/Theme.White"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -166,7 +166,8 @@
                     android:id="@+id/mEdtConfirmPassword"
                     style="@style/EditTextTheme"
                     android:drawablePadding="@dimen/_10sdp"
-                    android:hint="@string/password"
+                    android:hint="@string/confirm_password"
+                    android:imeOptions="actionDone"
                     android:inputType="textPassword"
                     android:tag="@string/please_enter_password" />
 

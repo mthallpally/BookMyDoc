@@ -1,45 +1,59 @@
 package com.bookmydoc.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
+import android.widget.AdapterView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bookmydoc.R
 import com.bookmydoc.adapter.SlotAdapter
 import com.bookmydoc.base.BaseActivity
 import com.bookmydoc.databinding.ActivityDocotrDetailBinding
+import com.bookmydoc.firestore.FireStoreClass
 import com.bookmydoc.horizontalcalendar.HorizontalCalendar
 import com.bookmydoc.horizontalcalendar.HorizontalCalendarView
 import com.bookmydoc.horizontalcalendar.utils.HorizontalCalendarListener
 import com.bookmydoc.interfaces.ListSelector
+import com.bookmydoc.model.Doctors
 import java.util.*
+
+import com.bookmydoc.adapter.CustomDropDownAdapter
+import com.bookmydoc.model.Booking
+
 
 class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDocotrDetailBinding
     var day: Int = 0
     var month: Int = 0
     var year: Int = 0
-    var currendate: String = ""
     private var mSlotAdapter: SlotAdapter? = null
-    var fromTime: String = ""
-    var drName: String = ""
+    var drId: String = ""
+    var selectedTopic: String = ""
+    var selectedSlot: String = ""
+    var selectedTime: String = ""
 
+    private lateinit var mDoctorDetails: Doctors
     private var timeSlotMorrningList = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_docotr_detail)
         binding.btnBook.setOnClickListener(this)
         binding.imgBack.setOnClickListener(this)
-        drName = intent.getStringExtra("drName").toString()
-        binding.txtDrName.text = drName
+        binding.imgCall.setOnClickListener(this)
+        binding.imgMap.setOnClickListener(this)
+
+        drId = intent.getStringExtra("drId").toString()
+
+        FireStoreClass().geDoctorDetails(this, drId)
         datePicker()
 
         mSlotAdapter = SlotAdapter(object : ListSelector {
             override fun selectedList(position: Int) {
 
-                fromTime = mSlotAdapter!!.itemList!!.get(position)
+                selectedSlot = mSlotAdapter!!.itemList!!.get(position)
 
             }
 
@@ -59,12 +73,32 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view) {
             binding.btnBook -> {
-                val intent = Intent(this, SuccessActivity::class.java)
-                intent.putExtra("drName", drName)
-                startActivity(intent)
+                if (TextUtils.isEmpty(selectedSlot)) {
+                    showErrorSnackBar("Please select slot.", true)
+                } else if (TextUtils.isEmpty(selectedTopic)) {
+                    showErrorSnackBar("Please choose topic.", true)
+                } else {
+                    addBooking()
+                }
+
             }
             binding.imgBack -> {
                 onBackPressed()
+            }
+            binding.imgMap -> {
+                val geoUri =
+                    "http://maps.google.com/maps?q=loc:" + mDoctorDetails.latitude + "," + mDoctorDetails.longitude + " (" + mDoctorDetails.name + ")"
+
+                val intent = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse(geoUri)
+                )
+                startActivity(intent)
+            }
+            binding.imgCall -> {
+                val intent = Intent(Intent.ACTION_DIAL)
+                intent.data = Uri.parse("tel:" + mDoctorDetails.mobile_number)
+                startActivity(intent)
             }
         }
     }
@@ -75,7 +109,7 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
         day = Calendar.getInstance()[Calendar.DAY_OF_MONTH]
         month = Calendar.getInstance()[Calendar.MONTH]
         year = Calendar.getInstance()[Calendar.YEAR]
-        currendate = (year.toString() + "-" + (month + 1) + "-" + day).toString()
+        selectedTime = (year.toString() + "-" + (month + 1) + "-" + day).toString()
         startDate[year, month] = day
         val endDate = Calendar.getInstance()
         endDate.add(Calendar.YEAR, 1)
@@ -98,7 +132,7 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
         horizontalCalendar.setCalendarListener(object : HorizontalCalendarListener() {
             override fun onDateSelected(date: Calendar, position: Int) {
 
-                currendate =
+                selectedTime =
                     date[Calendar.YEAR].toString() + "-" + (date[Calendar.MONTH] + 1) + "-" + date[Calendar.DATE]
 
 
@@ -117,4 +151,61 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
             }
         })
     }
+
+    fun doctorDetailsSuccess(doctor: Doctors) {
+        mDoctorDetails = doctor
+        hideProgressDialog()
+        binding.txtDrName.text = doctor.name
+        binding.txtCategory.text = doctor.categories
+        binding.txtPatient.text = doctor.patient
+        binding.txtExperience.text = doctor.experience
+        binding.txtRating.text = doctor.rating.toString()
+
+
+        val customDropDownAdapter = CustomDropDownAdapter(this, doctor.topic)
+
+        binding.mSpinnerCity.adapter = customDropDownAdapter
+        /*binding.mSpinnerCity.setAdapter(
+            NothingSelectedSpinnerAdapter(
+                adapterTransmit,
+                R.layout.layout_spiner,
+                this
+            )
+        )*/
+        binding.mSpinnerCity.onItemSelectedListener = object :
+            AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>,
+                view: View, position: Int, id: Long
+            ) {
+                selectedTopic = doctor.topic.get(position)
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                // write code to perform some action
+            }
+        }
+
+
+    }
+    fun addBooking() {
+        val booking = Booking(
+            System.currentTimeMillis().toString(),
+            drId,
+            FireStoreClass().getCurrentUserId(),
+            mDoctorDetails.name,
+            selectedTopic,
+            selectedSlot,
+            selectedTime
+        )
+        FireStoreClass().addBooking(this, booking)
+    }
+
+    fun userBookingSuccess() {
+        val intent = Intent(this, SuccessActivity::class.java)
+        intent.putExtra("drName", mDoctorDetails.name)
+        startActivity(intent)
+    }
+
 }

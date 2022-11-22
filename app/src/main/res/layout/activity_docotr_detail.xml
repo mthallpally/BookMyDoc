@@ -40,13 +40,14 @@
                     android:id="@+id/txtDrName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="@dimen/_20sdp"
                     android:fontFamily="@font/nunito_bold"
+                    android:paddingEnd="@dimen/_20sdp"
                     android:text="Dr. Anastasia\nAlana"
                     android:textColor="#FFF"
                     android:textSize="24sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_8sdp"
@@ -119,6 +120,7 @@
                                 android:textSize="12sp" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPatient"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_3sdp"
@@ -166,6 +168,7 @@
                                 android:textSize="12sp" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtExperience"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_3sdp"
@@ -212,6 +215,7 @@
                                 android:textSize="12sp" />
 
                             <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtRating"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_3sdp"
@@ -236,6 +240,7 @@
                     android:textSize="24sp" />
 
                 <ImageView
+                    android:id="@+id/imgMap"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_100sdp"
                     android:layout_marginStart="@dimen/_15sdp"
@@ -289,6 +294,34 @@
                     tools:itemCount="3"
                     tools:listitem="@layout/view_booking_time" />
 
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/choose_topic"
+                    android:textColor="#6E7DB1"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/bg_edittextbox">
+
+                    <Spinner
+                        android:id="@+id/mSpinnerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/listPreferredItemHeightSmall"
+                       android:layout_margin="2dp" />
+
+                </RelativeLayout>
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -296,21 +329,23 @@
                     android:padding="@dimen/_15sdp">
 
                     <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/imgCall"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="match_parent"
                         android:background="@drawable/rounded_blue_border"
                         android:gravity="center">
+
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:drawableStart="@drawable/ic_outline_call"
-                            android:fontFamily="@font/nunito"
-                            android:text="Call"
-                            android:gravity="center"
-                            android:drawablePadding="@dimen/_10sdp"
                             android:layout_gravity="center"
-                            android:textSize="16sp"
-                            android:textColor="#478CFC"/>
+                            android:drawableStart="@drawable/ic_outline_call"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:fontFamily="@font/nunito"
+                            android:gravity="center"
+                            android:text="Call"
+                            android:textColor="#478CFC"
+                            android:textSize="16sp" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -323,11 +358,11 @@
                         android:fontFamily="@font/nunito_bold"
                         android:text="Make an Appoitment"
                         android:textColor="@color/white"
-                        app:autoSizeTextType="uniform"
-                        app:autoSizeMinTextSize="8sp"
+                        android:textSize="16sp"
                         app:autoSizeMaxTextSize="16sp"
+                        app:autoSizeMinTextSize="8sp"
                         app:autoSizeStepGranularity="2sp"
-                        android:textSize="16sp" />
+                        app:autoSizeTextType="uniform" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </androidx.appcompat.widget.LinearLayoutCompat>

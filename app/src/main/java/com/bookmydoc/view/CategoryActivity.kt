@@ -42,7 +42,8 @@ class CategoryActivity : BaseActivity(), View.OnClickListener {
             override fun selectedList(position: Int) {
 
                 val intent = Intent(this@CategoryActivity, DoctorListActivity::class.java)
-                intent.putExtra("category", categoryArrayList.get(position))
+                intent.putExtra("category", categoryArrayList.get(position).name)
+                intent.putExtra("categoryId", categoryArrayList.get(position).id)
                 startActivity(intent)
             }
 

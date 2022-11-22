@@ -7,14 +7,14 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_7sdp"
-        android:layout_marginBottom="@dimen/_7sdp"
         android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_7sdp"
         android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
 
-        android:foreground="?attr/selectableItemBackground"
         android:layout_weight="1"
         android:background="@drawable/category_bg"
+        android:foreground="?attr/selectableItemBackground"
         android:outlineAmbientShadowColor="#000"
         android:outlineSpotShadowColor="#14000000"
         app:cardCornerRadius="@dimen/_16sdp"
@@ -60,7 +60,7 @@
                 android:orientation="vertical">
 
                 <androidx.appcompat.widget.AppCompatTextView
-                  android:id="@+id/txtName"
+                    android:id="@+id/txtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito_bold"
@@ -69,7 +69,7 @@
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/txtCategory"
+                    android:id="@+id/txtTopic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito"
@@ -84,20 +84,9 @@
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatTextView
-                       android:id="@+id/txtRating"
+                       android:id="@+id/txtTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_star"
-                        android:drawablePadding="@dimen/_3sdp"
-                        android:fontFamily="@font/nunito"
-                        android:text="4.5"
-                        android:textColor="#B36E7DB1"
-                        android:textSize="12sp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_15sdp"
                         android:drawableStart="@drawable/ic_clock"
                         android:drawablePadding="@dimen/_3sdp"
                         android:fontFamily="@font/nunito"

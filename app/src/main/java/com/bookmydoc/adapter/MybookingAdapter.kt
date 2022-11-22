@@ -11,19 +11,21 @@ import com.bookmydoc.base.BaseActivity
 import com.bookmydoc.databinding.ViewBookingTimeBinding
 import com.bookmydoc.databinding.ViewCategoryBinding
 import com.bookmydoc.databinding.ViewDoctorBinding
+import com.bookmydoc.databinding.ViewMyBookingBinding
 import com.bookmydoc.interfaces.ListSelector
+import com.bookmydoc.model.Booking
 import com.bookmydoc.model.Doctors
 
-class DoctorAdapter(val mCallBack: ListSelector, val mcount: Int) :
-    RecyclerView.Adapter<DoctorAdapter.ViewHolder>() {
-    public var itemList: ArrayList<Doctors>? = null
+class MybookingAdapter(val mCallBack: ListSelector, val mcount: Int) :
+    RecyclerView.Adapter<MybookingAdapter.ViewHolder>() {
+    public var itemList: ArrayList<Booking>? = null
     private var activity: BaseActivity? = null
     private var count: Int? = mcount
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
-        val mBinding = DataBindingUtil.inflate<ViewDoctorBinding>(
+        val mBinding = DataBindingUtil.inflate<ViewMyBookingBinding>(
             LayoutInflater.from(viewGroup.context),
-            R.layout.view_doctor, viewGroup, false
+            R.layout.view_my_booking, viewGroup, false
         )
         return ViewHolder(mBinding)
     }
@@ -32,8 +34,8 @@ class DoctorAdapter(val mCallBack: ListSelector, val mcount: Int) :
     override fun onBindViewHolder(holder: ViewHolder, i: Int) {
 
         holder.mBinding.txtName.text = itemList!!.get(i).name
-        holder.mBinding.txtCategory.text = itemList!!.get(i).categories
-        holder.mBinding.txtRating.text = itemList!!.get(i).rating.toString()
+        holder.mBinding.txtTopic.text = itemList!!.get(i).topic
+        holder.mBinding.txtTime.text = itemList!!.get(i).date+" "+itemList!!.get(i).time
         holder.itemView.setOnClickListener {
             mCallBack.selectedList(i)
         }
@@ -47,14 +49,14 @@ class DoctorAdapter(val mCallBack: ListSelector, val mcount: Int) :
 
     fun setUpcomingList(
         activity: BaseActivity,
-        itemList: ArrayList<Doctors>?
+        itemList: ArrayList<Booking>?
     ) {
         this.itemList = itemList
         this.activity = activity
         notifyDataSetChanged()
     }
 
-    inner class ViewHolder(val mBinding: ViewDoctorBinding) :
+    inner class ViewHolder(val mBinding: ViewMyBookingBinding) :
         RecyclerView.ViewHolder(mBinding.root)
 
 }

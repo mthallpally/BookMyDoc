@@ -81,7 +81,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_120sdp"
                     android:layout_marginStart="@dimen/_minus20sdp"
-                    android:layout_marginTop="@dimen/_40sdp"
                     android:layout_marginEnd="@dimen/_minus20sdp"
                     android:background="@drawable/search_bg_shedow"
                     android:contentDescription="@string/app_name"
@@ -90,8 +89,7 @@
                 <RelativeLayout
                     android:id="@+id/rlSearch"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_120sdp"
-                    android:layout_below="@+id/linUserName">
+                    android:layout_height="@dimen/_120sdp">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:layout_width="match_parent"
@@ -132,6 +130,7 @@
 
 
                         <androidx.appcompat.widget.AppCompatTextView
+                           android:id="@+id/txtDrName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/nunito_bold"
@@ -140,6 +139,7 @@
                             android:textSize="20sp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
+                           android:id="@+id/txtCategory"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/nunito"
@@ -408,6 +408,18 @@
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDoctors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:clipToPadding="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="30"
+                        android:nestedScrollingEnabled="false"
+                        tools:listitem="@layout/view_doctor" />
+
+
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/cardTopDoctor"
                         android:layout_width="match_parent"
@@ -418,7 +430,7 @@
                         android:foreground="?attr/selectableItemBackground"
                         android:outlineAmbientShadowColor="#000"
                         android:outlineSpotShadowColor="#14000000"
-
+android:visibility="gone"
                         app:cardCornerRadius="@dimen/_16sdp"
                         app:cardElevation="@dimen/_10sdp">
 

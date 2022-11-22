@@ -11,9 +11,8 @@ object  Constants {
     /*Collections*/
     const val USERS: String = "users"
     const val CATEGORIES : String = "categories"
-    const val CART_ITEMS : String = "card_items"
-    const val ORDERS : String = "orders"
-    const val SOLD_PRODUCT :String = "sold_products"
+    const val DOCTOR : String = "doctors"
+    const val BOOKING : String = "booking"
 
 
     const val MY_SHOP_PAL_PREFERENCES: String = "myShopPalPreferences"
@@ -34,6 +33,10 @@ object  Constants {
     const val PRODUCT_IMAGE : String = "product_image"
 
     const val USER_ID : String = "user_id"
+
+
+    const val CATEGORIES_ID : String = "categories_id"
+    const val RATING : String = "rating"
 
     const val EXTRA_PRODUCT_ID  : String = "extra_product_id"
     const val PRODUCT_ID : String = "product_id"
