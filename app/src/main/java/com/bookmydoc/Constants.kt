@@ -33,6 +33,7 @@ object  Constants {
     const val PRODUCT_IMAGE : String = "product_image"
 
     const val USER_ID : String = "user_id"
+    const val DOCTOR_ID : String = "doctor_id"
 
 
     const val CATEGORIES_ID : String = "categories_id"

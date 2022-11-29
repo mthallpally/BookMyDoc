@@ -16,8 +16,8 @@ import com.bookmydoc.interfaces.ListSelector
 import com.bookmydoc.model.Booking
 import com.bookmydoc.model.Doctors
 
-class MybookingAdapter(val mCallBack: ListSelector, val mcount: Int) :
-    RecyclerView.Adapter<MybookingAdapter.ViewHolder>() {
+class DoctorAppoinetmentAdapter(val mCallBack: ListSelector, val mcount: Int) :
+    RecyclerView.Adapter<DoctorAppoinetmentAdapter.ViewHolder>() {
     public var itemList: ArrayList<Booking>? = null
     private var activity: BaseActivity? = null
     private var count: Int? = mcount
@@ -33,7 +33,7 @@ class MybookingAdapter(val mCallBack: ListSelector, val mcount: Int) :
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onBindViewHolder(holder: ViewHolder, i: Int) {
 
-        holder.mBinding.txtName.text = itemList!!.get(i).doctor_name
+        holder.mBinding.txtName.text = itemList!!.get(i).user_name
         holder.mBinding.txtTopic.text = itemList!!.get(i).topic
         holder.mBinding.txtTime.text = itemList!!.get(i).date+" "+itemList!!.get(i).time
         holder.itemView.setOnClickListener {

@@ -82,6 +82,7 @@ class FireStoreClass {
                         is RegisterActivity -> activity.userLoggedInSuccess(user)
                         is SettingsActivity -> activity.userDetailSuccess(user)
                         is DashboardActivity -> activity.userDetailSuccess(user)
+                        is DocotrDetailActivity -> activity.userDetailSuccess(user)
                     }
                 }
 
@@ -90,6 +91,8 @@ class FireStoreClass {
                     is LoginActivity -> activity.hideProgressDialog()
                     is RegisterActivity -> activity.hideProgressDialog()
                     is SettingsActivity -> activity.hideProgressDialog()
+                    is DashboardActivity -> activity.hideProgressDialog()
+                    is DocotrDetailActivity -> activity.hideProgressDialog()
                 }
                 Log.e(activity.javaClass.simpleName, exception.message.toString())
             }
@@ -253,8 +256,8 @@ class FireStoreClass {
             }
     }
 
-    fun geDoctorDetails(activity: DocotrDetailActivity, doctorID: String) {
-        activity.showProgressDialog("")
+    fun geDoctorDetails(activity: Activity, doctorID: String) {
+
         mFireStore.collection(Constants.DOCTOR)
             .document(doctorID)
             .get()
@@ -264,11 +267,19 @@ class FireStoreClass {
                 val product = document.toObject(Doctors::class.java)
 
                 if (product != null) {
-                    activity.doctorDetailsSuccess(product)
+                    when (activity) {
+                        is DocotrDetailActivity -> activity.doctorDetailsSuccess(product)
+                        is DocotrLoginActivity -> activity.doctorDetailsSuccess(product)
+
+                    }
                 }
             }
             .addOnFailureListener { e ->
-                activity.hideProgressDialog()
+                when (activity) {
+                    is DocotrDetailActivity -> activity.hideProgressDialog()
+                    is DocotrLoginActivity -> activity.hideProgressDialog()
+
+                }
                 Log.e(activity.javaClass.simpleName, e.message.toString())
             }
     }
@@ -290,6 +301,29 @@ class FireStoreClass {
         activity.showProgressDialog("")
         mFireStore.collection(Constants.BOOKING)
             .whereEqualTo(Constants.USER_ID, uer_id)
+            .get()
+            .addOnSuccessListener { document ->
+                Log.i(activity.javaClass.simpleName, document.documents.toString())
+
+                val productList: ArrayList<Booking> = ArrayList()
+
+                for (i in document.documents) {
+                    val product = i.toObject(Booking::class.java)!!
+                    product.booking_id = i.id
+                    productList.add(product)
+                }
+                activity.successBookingListFromFirestore(productList)
+            }
+            .addOnFailureListener { e ->
+                activity.hideProgressDialog()
+                Log.e("Error :: ", e.message.toString())
+            }
+    }
+
+    fun getDoctorBookingList(activity: DoctorDashboardActivity, uer_id: String) {
+        activity.showProgressDialog("")
+        mFireStore.collection(Constants.BOOKING)
+            .whereEqualTo(Constants.DOCTOR_ID, uer_id)
             .get()
             .addOnSuccessListener { document ->
                 Log.i(activity.javaClass.simpleName, document.documents.toString())

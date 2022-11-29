@@ -22,6 +22,8 @@ import java.util.*
 
 import com.bookmydoc.adapter.CustomDropDownAdapter
 import com.bookmydoc.model.Booking
+import com.bookmydoc.model.User
+import com.bumptech.glide.Glide
 
 
 class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
@@ -34,6 +36,7 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
     var selectedTopic: String = ""
     var selectedSlot: String = ""
     var selectedTime: String = ""
+    var userName: String = ""
 
     private lateinit var mDoctorDetails: Doctors
     private var timeSlotMorrningList = ArrayList<String>()
@@ -46,7 +49,7 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
         binding.imgMap.setOnClickListener(this)
 
         drId = intent.getStringExtra("drId").toString()
-
+        showProgressDialog("")
         FireStoreClass().geDoctorDetails(this, drId)
         datePicker()
 
@@ -155,6 +158,7 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
     fun doctorDetailsSuccess(doctor: Doctors) {
         mDoctorDetails = doctor
         hideProgressDialog()
+        FireStoreClass().getUserDetails(this)
         binding.txtDrName.text = doctor.name
         binding.txtCategory.text = doctor.categories
         binding.txtPatient.text = doctor.patient
@@ -189,12 +193,14 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
 
 
     }
+
     fun addBooking() {
         val booking = Booking(
             System.currentTimeMillis().toString(),
             drId,
             FireStoreClass().getCurrentUserId(),
             mDoctorDetails.name,
+            userName,
             selectedTopic,
             selectedSlot,
             selectedTime
@@ -206,6 +212,11 @@ class DocotrDetailActivity : BaseActivity(), View.OnClickListener {
         val intent = Intent(this, SuccessActivity::class.java)
         intent.putExtra("drName", mDoctorDetails.name)
         startActivity(intent)
+    }
+
+    fun userDetailSuccess(user: User) {
+
+        userName = user.fullName
     }
 
 }

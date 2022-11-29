@@ -25,6 +25,9 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         binding.btnLogin.setOnClickListener(this)
         binding.txtSignup.setOnClickListener(this)
+        binding.txtDrLogin.setOnClickListener(this)
+
+
     }
 
     override fun onClick(view: View?) {
@@ -40,6 +43,10 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
             }
             binding.btnLogin -> {
                 loginUser()
+            }
+            binding.txtDrLogin -> {
+                val intent = Intent(this, DocotrLoginActivity::class.java)
+                startActivity(intent)
             }
         }
     }

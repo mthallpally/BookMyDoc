@@ -4,9 +4,11 @@
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="email">Email</string>
+    <string name="doctor_loginid">Doctor loginID</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_doctor_id">Please doctor loginID</string>
     <string name="please_enter_password">Please enter password</string>
     <string name="dont_have_an_account_register">Don’t have an account? <strong><font fgcolor='#468CFD'>Sign Up</font></strong></string>
     <string name="next">Next</string>
@@ -14,6 +16,7 @@
     <string name="welcome_str">Manage Your appointments and\ncreate new ones.</string>
 
 
+    <string name="dr_login"><u>Dr Login</u></string>
     <string name="name">Name</string>
     <string name="please_enter_name">Please Enter your name</string>
     <string name="mobile">Mobile</string>

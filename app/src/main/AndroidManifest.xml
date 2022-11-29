@@ -19,9 +19,17 @@
         android:theme="@style/Theme.BookMyDoc"
         tools:targetApi="31">
         <activity
-            android:name=".view.MyBookingActivity"
-            android:theme="@style/Theme.Blue"
+            android:name=".view.DoctorDashboardActivity"
+            android:theme="@style/Theme.White"
             android:exported="false" />
+        <activity
+            android:name=".view.DocotrLoginActivity"
+            android:theme="@style/Theme.White"
+            android:exported="false" />
+        <activity
+            android:name=".view.MyBookingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blue" />
         <activity
             android:name=".view.UserProfileActivity"
             android:exported="false"
@@ -71,7 +79,7 @@
         <activity
             android:name=".view.LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.White"></activity>
+            android:theme="@style/Theme.White" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

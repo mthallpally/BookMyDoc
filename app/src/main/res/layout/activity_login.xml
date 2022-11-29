@@ -9,6 +9,20 @@
         android:background="@color/white"
         tools:context=".view.LoginActivity">
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDrLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/dr_login"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#468CFD"
+            android:textSize="16sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -19,11 +33,11 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ivProfile"
-                android:transitionName="profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_80sdp"
-                android:src="@drawable/ic_login_illu" />
+                android:src="@drawable/ic_login_illu"
+                android:transitionName="profile" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ipEmail"
@@ -54,18 +68,18 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 app:boxBackgroundMode="none"
                 app:errorEnabled="false"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="#6E7DB1"
                 app:errorTextAppearance="@style/error_appearance"
-                app:hintEnabled="false">
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#6E7DB1">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/mEdtPassword"
                     style="@style/EditTextTheme"
                     android:drawablePadding="@dimen/_10sdp"
                     android:hint="@string/password"
-                    android:inputType="textPassword"
                     android:imeOptions="actionDone"
+                    android:inputType="textPassword"
                     android:tag="@string/please_enter_password" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -76,10 +90,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:background="@drawable/rounded_blue"
-                android:text="@string/login"
-                android:textSize="16sp"
                 android:fontFamily="@font/nunito_bold"
-                android:textColor="@color/white" />
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txtForgot"
